@@ -17,6 +17,8 @@ otp=OTP+"is your OTP"
 mssg=otp
 #include our email automation
 s=smtplib.SMTP("smtp.gmail.com",587)#587 is port
+#or we can directly use smtplib.SMTP_SSL("smtp.gmail.com",465)
+#similar to tls SSL secures the data and transfers it
 s.starttls()
 s.login("nsingamsetti11@gmail.com","dqfo gdpo vkbd rnuf")
 user="nsingamsetti11@gmail.com"

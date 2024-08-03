@@ -20,6 +20,8 @@ msg.attach(MIMEText(body,"plain"))
 text=msg.as_string()
 #same usage of smtplib to start the process
 server = smtplib.SMTP("smtp.gmail.com",587)
+#or we can directly use smtplib.SMTP_SSL("smtp.gmail.com",465)
+#similar to tls SSL secures the data and transfers it
 server.starttls()
 #next, log into server
 server.login(From,"dqfo gdpo vkbd rnuf")
